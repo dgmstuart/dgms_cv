@@ -2,5 +2,6 @@ output/
 tmp/
 *.log
 .sass-cache
+.jekyll-cache
 .deploy/
 _site/
