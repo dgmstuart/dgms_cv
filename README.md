@@ -1,6 +1,5 @@
 My developer CV, built with
 [Jekyll](https://jekyllrb.com/),
-[Haml](http://haml.info/)
 and [Sass](http://sass-lang.com/)
 
 Originally created using [Nanoc](http://nanoc.ws/).
