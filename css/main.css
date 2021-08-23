@@ -128,19 +128,10 @@ section .education .location, section .education .dtstart, section .education .d
 
 @media only screen and (min-width: 768px) { .experience .summary { margin-right: 150px; } }
 
-@media print { body { color: #000; background: #fff; width: 100%; margin: 0; padding: 0; }
-  @page { margin: 1.2cm; }
-  h2, h3 { page-break-after: avoid; }
-  header { page-break-after: avoid; }
-  .skills { page-break-after: avoid; page-break-inside: avoid; }
-  .experience .location a[href^=http]:after { content: " - " attr(href); }
-  .source_code a[href^=http]:after { content: " (" attr(href) ") "; } }
+@media print { body { color: #000; background: #fff; width: 100%; margin: 0; padding: 0; } @page { margin: 1.2cm; } h2, h3 { page-break-after: avoid; } header { page-break-after: avoid; } .skills { page-break-after: avoid; page-break-inside: avoid; } .experience .location a[href^=http]:after { content: " - " attr(href); } .source_code a[href^=http]:after { content: " (" attr(href) ") "; } }
 
 @media print and (color) { * { -webkit-print-color-adjust: exact; } }
 
-@media print and (monochrome) { #main section .experience ul.skills li.skill { color: #000; border: 1px solid #bbb; }
-  #main section .experience ul.skills li.skill.dev { border-style: solid; }
-  #main section .experience ul.skills li.skill.non-tech { border-style: dashed; }
-  #main section .experience ul.skills li.skill.approach { border-style: dotted; } }
+@media print and (monochrome) { #main section .experience ul.skills li.skill { color: #000; border: 1px solid #bbb; } #main section .experience ul.skills li.skill.dev { border-style: solid; } #main section .experience ul.skills li.skill.non-tech { border-style: dashed; } #main section .experience ul.skills li.skill.approach { border-style: dotted; } }
 
 /*# sourceMappingURL=main.css.map */
