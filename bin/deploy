@@ -1,5 +1,11 @@
-#!/usr/bin/env ruby
+#!/bin/bash
 
-require 'octopress-deploy'
+rm -rf _site
 
-Octopress::Deploy.push
+git clone -b gh-pages `git config remote.origin.url` _site
+jekyll build
+cd _site
+
+git add .
+git commit -m "Scripted deploy to gh-pages"
+git push
