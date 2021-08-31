@@ -1,12 +1,11 @@
 # Site settings
-title: Duncan Graeme Macdonald Stuart - Web Developer
-description: > # this means to ignore newlines until "baseurl:"
-  Professional CV of Duncan Grame Macdonald Stuart - 
-  a technical architect and web developer working in London
-baseurl: "/dgms_cv" # the subpath of your site, e.g. /blog
-url: "http://dgmstuart.github.com" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
+title: Duncan Graeme MacDonald Stuart - Web Developer
+description: >
+  Professional CV of Duncan Graeme MacDonald Stuart -
+  a Senior Web Developer and Technical Architect
+  based in Gothenburg, Sweden
+baseurl: "/dgms_cv"
+url: "https://dgmstuart.github.com"
 
 # Build settings
 markdown: kramdown
