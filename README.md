@@ -22,7 +22,7 @@ Generated site live at <https://dgmstuart.github.io/dgms_cv/>
 
 Edit `_deploy.yml`, then:
 
-    $ bundle exec bin/deploy
+    $ bin/deploy
 
 
 
