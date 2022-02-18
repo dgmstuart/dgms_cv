@@ -1,6 +1,6 @@
 // MOBILE ONLY
 @media only screen and (max-width: 480px) {
-  .experience .summary {
+  .experience h3.summary {
     display: block;
     margin-bottom: 10px;
   }
@@ -8,14 +8,14 @@
 
 // SMALL
 @media only screen and (max-width: 767px) {
-  .experience .summary {
+  .experience h3.summary {
     margin-right: 20px;
   }
 }
 
 // TABLET & SMALLER LAPTOPS
 @media only screen and (min-width: 768px) {
-  .experience .summary {
+  .experience h3.summary {
     margin-right: 150px;
   }
 

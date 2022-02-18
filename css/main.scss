@@ -129,9 +129,19 @@ section .experience {
       @include basic-list;
     }
   }
+  a.summary {
+    font-weight: bold
+  }
 }
 
-section .education {
+section.side-projects {
+  .experience {
+    margin-top: 25px;
+  }
+}
+
+section .education,
+section.side-projects {
   @include show-links-on-hover;
   margin-bottom: $content-spacing;
   h3.summary {
