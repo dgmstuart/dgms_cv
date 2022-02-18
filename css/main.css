@@ -100,15 +100,19 @@ section .experience .description ul li { margin-bottom: 10px; }
 
 section .experience .description ul ul { list-style: circle; }
 
-section .education { margin-bottom: 15px; }
+section .experience a.summary { font-weight: bold; }
 
-section .education:hover a { text-decoration: underline; transition: color 0.5s ease; }
+section.side-projects .experience { margin-top: 25px; }
 
-section .education:hover a:hover { color: #b94a48; }
+section .education, section.side-projects { margin-bottom: 15px; }
 
-section .education h3.summary { font-size: 18px; display: block; }
+section .education:hover a, section.side-projects:hover a { text-decoration: underline; transition: color 0.5s ease; }
 
-section .education .location, section .education .dtstart, section .education .dtend { font-style: italic; }
+section .education:hover a:hover, section.side-projects:hover a:hover { color: #b94a48; }
+
+section .education h3.summary, section.side-projects h3.summary { font-size: 18px; display: block; }
+
+section .education .location, section .education .dtstart, section .education .dtend, section.side-projects .location, section.side-projects .dtstart, section.side-projects .dtend { font-style: italic; }
 
 .interests:hover a { text-decoration: underline; transition: color 0.5s ease; }
 
@@ -122,11 +126,11 @@ section .education .location, section .education .dtstart, section .education .d
 
 .colophon li a { color: #3a87ad; }
 
-@media only screen and (max-width: 480px) { .experience .summary { display: block; margin-bottom: 10px; } }
+@media only screen and (max-width: 480px) { .experience h3.summary { display: block; margin-bottom: 10px; } }
 
-@media only screen and (max-width: 767px) { .experience .summary { margin-right: 20px; } }
+@media only screen and (max-width: 767px) { .experience h3.summary { margin-right: 20px; } }
 
-@media only screen and (min-width: 768px) { .experience .summary { margin-right: 150px; } }
+@media only screen and (min-width: 768px) { .experience h3.summary { margin-right: 150px; } }
 
 @media print { body { color: #000; background: #fff; width: 100%; margin: 0; padding: 0; } @page { margin: 1.2cm; } h2, h3 { page-break-after: avoid; } header { page-break-after: avoid; } .skills { page-break-after: avoid; page-break-inside: avoid; } .experience .location a[href^=http]:after { content: " - " attr(href); } .source_code a[href^=http]:after { content: " (" attr(href) ") "; } }
 
