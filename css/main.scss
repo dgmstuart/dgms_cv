@@ -45,9 +45,10 @@ header.vcard {
   }
 
   address {
+    max-width: 500px;
+
     @include show-links-on-hover;
 
-    max-width: 500px;
     dl {
       @extend %clearfix;
       min-width: 240px;
@@ -86,9 +87,10 @@ section {
 }
 
 section .experience {
+  margin: 40px 0 10px 0;
+
   @include show-links-on-hover;
 
-  margin: 40px 0 10px 0;
   header {
     font-size: $section-subheading;
     h3.location {
@@ -142,8 +144,8 @@ section.side-projects {
 
 section .education,
 section.side-projects {
-  @include show-links-on-hover;
   margin-bottom: $content-spacing;
+  @include show-links-on-hover;
   h3.summary {
     font-size: $section-subheading;
     display: block;
