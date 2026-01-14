@@ -9,10 +9,6 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
 body {
   background: variables.$white;
   font-size: variables.$text;
@@ -77,9 +73,6 @@ section {
     font-size: variables.$section-heading;
     font-weight: bold;
   }
-  &.summary ul {
-    @include mixins.basic-list;
-  }
 }
 
 section .experience {
@@ -89,23 +82,25 @@ section .experience {
 
   header {
     font-size: variables.$section-subheading;
-    h3.location {
+    h3.experience-organisation {
       margin-bottom: 5px;
       a.org {
         font-size: variables.$section-heading;
         font-weight: bold;
         @include mixins.colour-on-hover;
       }
-      .adr{
-        font-style: italic;
-        &:before { content: "(" }
-        &:after { content: ")" }
-      }
     }
-    .dtstart, .dtend, .duration {
+    .date, .duration {
       font-style: italic;
     }
   }
+
+  .experience-city{
+    font-style: italic;
+    &:before { content: "(" }
+    &:after { content: ")" }
+  }
+
   ul.skills {
     margin-top: variables.$content-spacing;
     li.skill {
@@ -127,26 +122,39 @@ section .experience {
       @include mixins.basic-list;
     }
   }
-  a.summary {
-    font-weight: bold
+}
+
+section.profile {
+  ul {
+    @include mixins.basic-list;
+  }
+}
+
+section.work-experience {
+  .experience-items ul {
+    @include mixins.basic-list;
   }
 }
 
 section.side-projects {
+  .project-name {
+    font-weight: bold
+  }
+
   .experience {
     margin-top: 25px;
   }
 }
 
-section .education,
+section.education .qualification,
 section.side-projects {
   margin-bottom: variables.$content-spacing;
   @include mixins.show-links-on-hover;
-  h3.summary {
+  .qualification-name {
     font-size: variables.$section-subheading;
     display: block;
   }
-  .location, .dtstart, .dtend {
+  .org, .date {
     font-style: italic;
   }
 }
