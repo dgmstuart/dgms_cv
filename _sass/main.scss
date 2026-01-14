@@ -75,23 +75,28 @@ section {
   }
 }
 
-section .experience {
-  margin: 40px 0 10px 0;
+.description {
+  ul, p {
+    margin-top: variables.$content-spacing;
+  }
+  ul {
+    @include mixins.basic-list;
+  }
+}
 
-  @include mixins.show-links-on-hover;
+section.profile {
+  ul {
+    @include mixins.basic-list;
+  }
+}
 
-  header {
-    font-size: variables.$section-subheading;
-    h3.experience-organisation {
-      margin-bottom: 5px;
-      a.org {
-        font-size: variables.$section-heading;
-        font-weight: bold;
-        @include mixins.colour-on-hover;
-      }
-    }
-    .date, .duration {
-      font-style: italic;
+section.work-experience {
+  h3.experience-organisation {
+    margin-bottom: 5px;
+    a.org {
+      font-size: variables.$section-heading;
+      font-weight: bold;
+      @include mixins.colour-on-hover;
     }
   }
 
@@ -114,25 +119,18 @@ section .experience {
       &.approach  { background-color: variables.$green; }
     }
   }
-  .description {
-    ul, p {
-      margin-top: variables.$content-spacing;
-    }
-    ul {
-      @include mixins.basic-list;
-    }
-  }
-}
 
-section.profile {
-  ul {
-    @include mixins.basic-list;
-  }
-}
+  .experience {
+    margin: 40px 0 10px 0;
 
-section.work-experience {
-  .experience-items ul {
-    @include mixins.basic-list;
+    @include mixins.show-links-on-hover;
+
+    header {
+      font-size: variables.$section-subheading;
+      .date, .duration {
+        font-style: italic;
+      }
+    }
   }
 }
 
@@ -141,8 +139,12 @@ section.side-projects {
     font-weight: bold
   }
 
-  .experience {
+  .project {
     margin-top: 25px;
+  }
+
+  ul {
+    padding-bottom: 10px;
   }
 }
 
