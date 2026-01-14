@@ -20,10 +20,4 @@ Generated site live at <https://dgmstuart.github.io/dgms_cv/>
 
 ## Deploy
 
-Edit `_deploy.yml`, then:
-
     $ bin/deploy
-
-
-
-
