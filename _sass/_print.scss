@@ -1,9 +1,9 @@
-@import "variables";
+@use "variables";
 
 @media print {
   body {
-    color: $font-color;
-    background: $white;
+    color: variables.$font-color;
+    background: variables.$white;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -44,8 +44,8 @@
   // should be able to use `max-color-index: 255` instead of `monochrome`,
   // but couldn't get it to work
   #main section .experience ul.skills li.skill {
-    color: $font-color;
-    border: 1px solid $light-grey;
+    color: variables.$font-color;
+    border: 1px solid variables.$light-grey;
     &.dev       { border-style: solid; }
     &.non-tech  { border-style: dashed; }
     &.approach  { border-style: dotted; }

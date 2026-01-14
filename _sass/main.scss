@@ -1,9 +1,5 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@import "reset";
-@import "variables";
-@import "mixins";
+@use "variables";
+@use "mixins";
 
 %clearfix {
   &:after {
@@ -18,8 +14,8 @@
 }
 
 body {
-  background: $white;
-  font-size: $text;
+  background: variables.$white;
+  font-size: variables.$text;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
@@ -29,17 +25,17 @@ body {
 }
 
 header.vcard {
-  @include coloured-border;
+  @include mixins.coloured-border;
 
   h1 {
     .fn {
       display: block;
-      font-size: $title;
+      font-size: variables.$title;
       margin-bottom: 20px;
     }
     .title {
       display: block;
-      font-size: $sub-title;
+      font-size: variables.$sub-title;
       margin-bottom: 30px;
     }
   }
@@ -47,7 +43,7 @@ header.vcard {
   address {
     max-width: 500px;
 
-    @include show-links-on-hover;
+    @include mixins.show-links-on-hover;
 
     dl {
       @extend %clearfix;
@@ -72,33 +68,33 @@ header.vcard {
 }
 
 section {
-  @include coloured-border;
+  @include mixins.coloured-border;
 
   clear: both;
   margin-top: 20px;
   h2 {
-    margin-bottom: $content-spacing;
-    font-size: $section-heading;
+    margin-bottom: variables.$content-spacing;
+    font-size: variables.$section-heading;
     font-weight: bold;
   }
   &.summary ul {
-    @include basic-list;
+    @include mixins.basic-list;
   }
 }
 
 section .experience {
   margin: 40px 0 10px 0;
 
-  @include show-links-on-hover;
+  @include mixins.show-links-on-hover;
 
   header {
-    font-size: $section-subheading;
+    font-size: variables.$section-subheading;
     h3.location {
       margin-bottom: 5px;
       a.org {
-        font-size: $section-heading;
+        font-size: variables.$section-heading;
         font-weight: bold;
-        @include colour-on-hover;
+        @include mixins.colour-on-hover;
       }
       .adr{
         font-style: italic;
@@ -111,24 +107,24 @@ section .experience {
     }
   }
   ul.skills {
-    margin-top: $content-spacing;
+    margin-top: variables.$content-spacing;
     li.skill {
       display: inline-block;
       padding: 7px 8px 3px;
       margin-bottom: 4px;
       color: white;
 
-      &.dev       { background-color: $red; }
-      &.non-tech  { background-color: $blue; }
-      &.approach  { background-color: $green; }
+      &.dev       { background-color: variables.$red; }
+      &.non-tech  { background-color: variables.$blue; }
+      &.approach  { background-color: variables.$green; }
     }
   }
   .description {
     ul, p {
-      margin-top: $content-spacing;
+      margin-top: variables.$content-spacing;
     }
     ul {
-      @include basic-list;
+      @include mixins.basic-list;
     }
   }
   a.summary {
@@ -144,10 +140,10 @@ section.side-projects {
 
 section .education,
 section.side-projects {
-  margin-bottom: $content-spacing;
-  @include show-links-on-hover;
+  margin-bottom: variables.$content-spacing;
+  @include mixins.show-links-on-hover;
   h3.summary {
-    font-size: $section-subheading;
+    font-size: variables.$section-subheading;
     display: block;
   }
   .location, .dtstart, .dtend {
@@ -156,15 +152,15 @@ section.side-projects {
 }
 
 .interests {
-  @include show-links-on-hover;
+  @include mixins.show-links-on-hover;
   p {
-    margin-bottom: $paragraph-spacing;
+    margin-bottom: variables.$paragraph-spacing;
   }
 }
 
 .colophon {
   h3 {
-    font-size: $minor-heading;
+    font-size: variables.$minor-heading;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -172,10 +168,7 @@ section.side-projects {
     font-style: italic;
     margin-bottom: 5px;
     a {
-      color: $link-color;
+      color: variables.$link-color;
     }
   }
 }
-
-@import "responsive";
-@import "print";

@@ -1,8 +1,10 @@
+@use "variables";
+
 @mixin basic-list {
   list-style: disc;
   margin-left: 20px;
   li {
-    margin-bottom: $paragraph-spacing;
+    margin-bottom: variables.$paragraph-spacing;
   }
   ul {
     list-style: circle;
@@ -17,7 +19,7 @@
 
 @mixin colour-on-hover {
   transition: color 0.5s ease;
-  &:hover { color: $red; }
+  &:hover { color: variables.$red; }
 }
 
 @mixin show-links-on-hover {
