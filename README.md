@@ -20,4 +20,5 @@ Generated site live at <https://dgmstuart.github.io/dgms_cv/>
 
 ## Deploy
 
-    $ bin/deploy
+The site deploys via github actions when pushing to main.
+
