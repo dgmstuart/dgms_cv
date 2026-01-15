@@ -1,9 +1,23 @@
----
-title: Duncan Graeme MacDonald Stuart - Web Developer
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<header class="vcard">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Duncan Graeme MacDonald Stuart - Web Developer</title>
+  <meta name="description" content="Professional CV of Duncan Graeme MacDonald Stuart - a Senior Web Developer and Technical Architect based in Gothenburg, Sweden
+">
+
+  <link rel="stylesheet" href="/dgms_cv/css/styles.css">
+  <link rel="canonical" href="https://dgmstuart.github.com/dgms_cv/">
+</head>
+
+
+  <body class="hresume">
+    <div id="main">
+      <header class="vcard">
   <h1>
     <span class="fn">Duncan Graeme MacDonald Stuart</span>
     <span class="title">Web Developer</span>
@@ -35,18 +49,18 @@ layout: default
     <h2>Profile</h2>
   </header>
   <ul>
-    {% assign seconds_in_a_year = 31556926 %}
-    {% assign seconds_in_a_month = 2629743 %}
-    {% capture now_unix %}{{ "now" | date: '%s' }}{% endcapture %}
+    
+    
+    
     <li>
-      {% capture ruby_start %}{{ "2013-01-01" | date: '%s' }}{% endcapture %}
-      {% capture ruby_extra %}{{ 18 | times: seconds_in_a_month }}{% endcapture %}
-      {{ ruby_extra | plus: now_unix | minus: ruby_start | divided_by: seconds_in_a_year }}+
+      
+      
+      14+
       years professional experience in Ruby on Rails development
     </li>
     <li>
-      {% capture software_start %}{{ "2004-09-01" | date: '%s' }}{% endcapture %}
-      {{ now_unix | minus: software_start | divided_by: seconds_in_a_year }}+
+      
+      21+
       years working across all stages of the software life-cycle: from strategy and requirements design through to testing and support
     </li>
     <li>Extensive experience of working with users and stakeholders in the public and private sectors in Sweden and the UK - notably with UK central government</li>
@@ -388,3 +402,9 @@ layout: default
     </li>
   </ul>
 </section>
+
+    </div>
+  </body>
+
+</html>
+
